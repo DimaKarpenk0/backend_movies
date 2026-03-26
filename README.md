@@ -52,7 +52,6 @@ Swagger UI доступен по адресу: `http://127.0.0.1:8000/docs`
 * `id` (int, PK)
 * `title` (str, 2-100 символов)
 * `director` (str)
-* `description` (str, необязательное)
 * `release_year` (int)
 * `rating` (float, 0 < rating < 10)
 * `available` (bool)
@@ -107,7 +106,6 @@ Authorization: Bearer <JWT token>
     "id": 1,
     "title": "Inception",
     "director": "Christopher Nolan",
-    "description": "Mind-bending thriller",
     "release_year": 2010,
     "rating": 8.8,
     "available": true
@@ -131,7 +129,6 @@ Authorization: Bearer <JWT token>
 {
   "title": "Interstellar",
   "director": "Christopher Nolan",
-  "description": "Space drama",
   "release_year": 2014,
   "rating": 8.7,
   "available": true
@@ -219,7 +216,6 @@ curl -X POST "http://127.0.0.1:8000/movies" \
 -d '{
   "title": "Interstellar",
   "director": "Christopher Nolan",
-  "description": "Space drama",
   "release_year": 2014,
   "rating": 8.7,
   "available": true
